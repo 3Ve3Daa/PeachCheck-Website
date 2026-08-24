@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows Forensics — PeachCheck</title>
+  <meta name="description" content="PeachCheck собирает доказательства из десятков Windows-источников: Prefetch, Amcache, BAM, UserAssist, ShimCache, Event Logs и другие.">
+  <meta property="og:title" content="Windows Forensics — PeachCheck">
+  <meta property="og:description" content="Prefetch, Amcache, BAM, UserAssist, ShimCache, Event Logs и другие Windows-источники.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/windows.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Windows Forensics — PeachCheck">
+  <meta name="twitter:description" content="Prefetch, Amcache, BAM, UserAssist, ShimCache, Event Logs.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/windows.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="monitor"></i>Windows</span>
+          <h1 class="page-title">Windows <span class="text-gradient">Forensics</span></h1>
+          <p class="page-subtitle">Десятки источников доказательств в одном приложении. Без сторонних утилит и PowerShell-скриптов.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Основные источники</h2>
+          <p>Каждый источник даёт свой срез активности системы. Вместе они создают полную картину.</p>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="search"></i></div>
+            <h3 class="card-title">Prefetch</h3>
+            <p class="card-desc">Windows записывает запуски программ в папку C:\Windows\Prefetch. Показывает, что запускалось, когда и сколько раз.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="archive"></i></div>
+            <h3 class="card-title">Amcache</h3>
+            <p class="card-desc">Инвентаризация исполняемых файлов. Помогает найти следы удалённых программ и их пути.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="clock"></i></div>
+            <h3 class="card-title">BAM / DAM</h3>
+            <p class="card-desc">Background Activity Moderator хранит последние запущенные программы для каждого пользователя.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="user"></i></div>
+            <h3 class="card-title">UserAssist</h3>
+            <p class="card-desc">Список программ, запущенных из GUI, с количеством запусков и временем последнего запуска.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="history"></i></div>
+            <h3 class="card-title">ShimCache</h3>
+            <p class="card-desc">Application Compatibility Cache. Содержит следы запуска исполняемых файлов, даже если они уже удалены.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="list"></i></div>
+            <h3 class="card-title">Jump Lists</h3>
+            <p class="card-desc">Недавние документы и приложения, закреплённые в панели задач. Помогает восстановить контекст.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="file-symlink"></i></div>
+            <h3 class="card-title">LNK</h3>
+            <p class="card-desc">Ярлыки в Recent и на рабочем столе содержат пути к запускаемым файлам и их MAC-время.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="folder-tree"></i></div>
+            <h3 class="card-title">Registry Persistence</h3>
+            <p class="card-desc">Run keys, RunOnce, Winlogon, Services, Image File Execution Options, Active Setup и другие точки закрепления.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="trash-2"></i></div>
+            <h3 class="card-title">Recycle Bin</h3>
+            <p class="card-desc">Информация об удалённых файлах: оригинальный путь, время удаления, размер.</p>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top:70px;">
+          <h2>Дополнительные источники</h2>
+        </div>
+        <div class="grid-4 reveal">
+          <div class="glass-card text-center"><h3 class="card-title">SRUM</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">ShellBags</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">USBSTOR</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Event Logs</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Task Scheduler</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">WMI Persistence</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">BITS Jobs</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">OpenSavePidlMRU</h3></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

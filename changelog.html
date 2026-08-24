@@ -1,0 +1,70 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Чейнджлог — PeachCheck</title>
+  <meta name="description" content="История изменений PeachCheck. Список версий, новых возможностей и исправлений.">
+  <meta property="og:title" content="Чейнджлог — PeachCheck">
+  <meta property="og:description" content="История изменений PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/changelog.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Чейнджлог — PeachCheck">
+  <meta name="twitter:description" content="История изменений PeachCheck.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/changelog.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="git-commit"></i>Чейнджлог</span>
+          <h1 class="page-title">История <span class="text-gradient">изменений</span></h1>
+          <p class="page-subtitle">Что нового в PeachCheck.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container narrow">
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-number">v1.0.0</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Релиз 1.0.0 — 23 августа 2026</h3>
+              <ul style="color:var(--text-2);padding-left:20px;line-height:1.8;">
+                <li>Первый стабильный релиз PeachCheck.</li>
+                <li>Windows Forensics: Prefetch, Amcache, BAM/DAM, UserAssist, ShimCache, SRUM, Jump Lists, LNK, Recycle Bin, Event Logs.</li>
+                <li>Minecraft Detection: JAR analysis, fabric.mod.json, mods.toml, логи, JVM-аргументы, поддержка десятков лаунчеров.</li>
+                <li>Process Analysis: PID/PPID, командная строка, Authenticode, SHA-256.</li>
+                <li>Registry Persistence: Run keys, Winlogon, Services, IFEO, Active Setup, Task Scheduler, WMI.</li>
+                <li>Correlation Engine: confidence и severity на основе независимых источников.</li>
+                <li>Экспорт отчётов в JSON, TXT и standalone HTML.</li>
+                <li>41 xUnit тест покрывают core и scanner-модули.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

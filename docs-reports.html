@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Отчёты — PeachCheck Docs</title>
+  <meta name="description" content="Форматы отчётов PeachCheck: JSON, TXT и standalone HTML. Как интерпретировать результаты.">
+  <meta property="og:title" content="Отчёты — PeachCheck Docs">
+  <meta property="og:description" content="Форматы отчётов PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs-reports.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Отчёты — PeachCheck Docs">
+  <meta name="twitter:description" content="Форматы отчётов PeachCheck.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs-reports.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="file-bar-chart"></i>Docs</span>
+          <h1 class="page-title">Отчёты & <span class="text-gradient">Экспорт</span></h1>
+          <p class="page-subtitle">JSON, TXT и HTML для разных сценариев.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <h2>JSON</h2>
+          <p>Структурированный машиночитаемый формат. Подходит для автоматической обработки, загрузки в базу данных или интеграции с другими инструментами.</p>
+
+          <h2>TXT</h2>
+          <p>Текстовый отчёт для быстрого чтения в любом редакторе. Содержит сводку, находки и evidence в плоском виде.</p>
+
+          <h2>HTML</h2>
+          <p>Standalone HTML-отчёт с таблицами, фильтрами и подсветкой. Можно открыть в браузере без интернета.</p>
+
+          <h2>Структура отчёта</h2>
+          <ul>
+            <li><strong>Summary:</strong> общее количество находок по категориям.</li>
+            <li><strong>Findings:</strong> список обнаружений с confidence, severity и evidence.</li>
+            <li><strong>Artifacts:</strong> исторические следы и дополнительные источники.</li>
+            <li><strong>Info:</strong> легитимный софт и контекст.</li>
+          </ul>
+
+          <h2>Интерпретация</h2>
+          <p>Не полагайтесь только на количество DETECTED. Всегда смотрите confidence и список evidence. Если один источник — это повод проверить вручную, но не основание для окончательного решения.</p>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

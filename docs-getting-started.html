@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Начало работы — PeachCheck Docs</title>
+  <meta name="description" content="Как установить и запустить PeachCheck: права доступа, первый скан, проверка SHA-256.">
+  <meta property="og:title" content="Начало работы — PeachCheck Docs">
+  <meta property="og:description" content="Установка и первый запуск PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs-getting-started.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Начало работы — PeachCheck Docs">
+  <meta name="twitter:description" content="Установка и первый запуск PeachCheck.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs-getting-started.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="rocket"></i>Docs</span>
+          <h1 class="page-title">Начало <span class="text-gradient">работы</span></h1>
+          <p class="page-subtitle">Установка, проверка, первый запуск.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <h2>1. Системные требования</h2>
+          <ul>
+            <li>Windows 10 (1909+) или Windows 11</li>
+            <li>64-bit (x64)</li>
+            <li>~100 МБ свободного места</li>
+            <li>Права Администратора для Full Scan</li>
+          </ul>
+
+          <h2>2. Скачивание</h2>
+          <p>Перейдите на страницу <a href="/download.html">Загрузки</a> и скачайте <code>PeachCheck.exe</code>. Файл portable — установка не требуется.</p>
+
+          <h2>3. Проверка SHA-256</h2>
+          <p>В PowerShell выполните:</p>
+          <div class="code-block">Get-FileHash .\PeachCheck.exe -Algorithm SHA256</div>
+          <p>Сравните результат с хешем, указанным на странице загрузки.</p>
+
+          <h2>4. Запуск</h2>
+          <p>Для максимальной глубины запускайте от имени Администратора:</p>
+          <div class="code-block">Right Click → Run as administrator</div>
+
+          <h2>5. Первый скан</h2>
+          <ol>
+            <li>Нажмите <strong>Quick Scan</strong> для быстрой оценки.</li>
+            <li>Дождитесь завершения всех модулей.</li>
+            <li>Изучите карточки находок.</li>
+            <li>При необходимости экспортируйте отчёт.</li>
+          </ol>
+
+          <div class="docs-tip">
+            <strong>Совет:</strong> Для максимальной глубины используйте Full Scan. Он включает Prefetch, Amcache, BAM/DAM и другие исторические источники.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

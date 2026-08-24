@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Скачать PeachCheck — Windows & Minecraft Forensic Scanner</title>
+  <meta name="description" content="Скачайте PeachCheck — portable EXE для Windows 10/11 x64. Проверьте SHA-256, запустите Quick Scan или Full Scan офлайн.">
+  <meta property="og:title" content="Скачать PeachCheck — Windows & Minecraft Forensic Scanner">
+  <meta property="og:description" content="Скачайте portable EXE для Windows 10/11 x64. Проверьте SHA-256 и сканируйте офлайн.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/download.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Скачать PeachCheck">
+  <meta name="twitter:description" content="Portable EXE для Windows 10/11 x64. Проверьте SHA-256 и сканируйте офлайн.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/download.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="download"></i>Скачать</span>
+          <h1 class="page-title">Загрузите <span class="text-gradient">PeachCheck</span></h1>
+          <p class="page-subtitle">Portable EXE для Windows 10/11 x64. Один файл, без установки, без зависимостей.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container narrow">
+        <div class="glass download-card reveal">
+          <div class="version-card">
+            <span class="version-badge">v1.0.0</span>
+            <span class="release-date">Релиз: 23 августа 2026</span>
+          </div>
+          <div class="download-info">
+            <div class="download-info-item">
+              <span class="download-info-label">Файл</span>
+              <span class="download-info-value">PeachCheck.exe</span>
+            </div>
+            <div class="download-info-item">
+              <span class="download-info-label">Размер</span>
+              <span class="download-info-value">~68 МБ</span>
+            </div>
+            <div class="download-info-item">
+              <span class="download-info-label">Платформа</span>
+              <span class="download-info-value">Windows 10 / 11 x64</span>
+            </div>
+            <div class="download-info-item">
+              <span class="download-info-label">Тип</span>
+              <span class="download-info-value">Portable, self-contained</span>
+            </div>
+          </div>
+          <div class="code-block">
+SHA256: 4D23B302D99EC428063BE986DC75B2F9BF3C4E3E9209AEC6072CFD7E551ED392
+          </div>
+          <a href="https://github.com/PeachMine/PeachCheck/releases/latest/download.htmlPeachCheck.exe" class="btn btn-primary btn-large" download>
+            <i data-lucide="download"></i>
+            Скачать PeachCheck.exe
+          </a>
+          <a href="https://github.com/PeachMine/PeachCheck/releases" target="_blank" rel="noopener" class="btn btn-secondary btn-large" style="margin-left:12px;">
+            <i data-lucide="external-link"></i>
+            Все релизы
+          </a>
+        </div>
+
+        <div class="glass reveal" style="margin-top:30px;">
+          <h3 style="margin-bottom:12px;">Как проверить SHA-256</h3>
+          <p>Сравните хеш загруженного файла с хешем на сайте. В PowerShell выполните:</p>
+          <div class="code-block">
+Get-FileHash .\PeachCheck.exe -Algorithm SHA256
+          </div>
+          <p style="margin-bottom:0;">Если хеш совпадает — файл не повреждён и не подменён.</p>
+        </div>
+
+        <div class="grid-3 reveal" style="margin-top:30px;">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="monitor"></i></div>
+            <h3 class="card-title">Windows 10 / 11</h3>
+            <p class="card-desc">64-разрядная версия. Работает на Windows 10 1909+ и Windows 11.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="shield"></i></div>
+            <h3 class="card-title">Запуск от Администратора</h3>
+            <p class="card-desc">Для доступа ко всем forensic-источникам рекомендуется запускать с правами администратора.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="wifi-off"></i></div>
+            <h3 class="card-title">Офлайн</h3>
+            <p class="card-desc">Интернет не требуется. Сканирование не отправляет данные на сервер.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

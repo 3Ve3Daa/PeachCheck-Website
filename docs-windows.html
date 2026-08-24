@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Windows Forensics — PeachCheck Docs</title>
+  <meta name="description" content="Документация по Windows-источникам PeachCheck: Prefetch, Amcache, BAM, UserAssist, ShimCache и другие.">
+  <meta property="og:title" content="Windows Forensics — PeachCheck Docs">
+  <meta property="og:description" content="Windows-источники PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs.htmlwindows/">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Windows Forensics — PeachCheck Docs">
+  <meta name="twitter:description" content="Windows-источники PeachCheck.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs.htmlwindows/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="monitor"></i>Docs</span>
+          <h1 class="page-title">Windows <span class="text-gradient">Forensics</span></h1>
+          <p class="page-subtitle">Как PeachCheck анализирует Windows-источники.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <h2>Prefetch</h2>
+          <p>Папка <code>C:\Windows\Prefetch</code> содержит файлы, которые Windows создаёт при запуске программ. PeachCheck извлекает имя исполняемого файла, путь, хеш и время последнего запуска.</p>
+
+          <h2>Amcache</h2>
+          <p>Amcache.hve ведёт инвентаризацию программ. Помогает найти следы удалённых исполняемых файлов и их исходные пути.</p>
+
+          <h2>BAM / DAM</h2>
+          <p>Background Activity Moderator хранит последние запущенные программы для каждого пользователя в реестре. Полезен для восстановления истории запусков.</p>
+
+          <h2>UserAssist</h2>
+          <p>Содержит программы, запущенные из GUI, с ROT13-кодированными именами. Даёт счётчик запусков и время последнего старта.</p>
+
+          <h2>ShimCache</h2>
+          <p>Application Compatibility Cache хранит следы запуска исполняемых файлов. Помогает обнаружить программы, которые уже удалены с диска.</p>
+
+          <h2>Persistence</h2>
+          <p>PeachCheck проверяет точки закрепления: Run / RunOnce, Winlogon, Services, Image File Execution Options, Active Setup, Task Scheduler, WMI Events, BITS Jobs.</p>
+
+          <div class="docs-tip">
+            <strong>Важно:</strong> Большинство этих источников доступны только с правами Администратора. Запускайте Full Scan от имени Администратора.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

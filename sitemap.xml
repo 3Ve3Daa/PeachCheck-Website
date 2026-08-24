@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://check.peachmine.fun/</loc><priority>1.0</priority></url>
+  <url><loc>https://check.peachmine.fun/download.html</loc><priority>0.9</priority></url>
+  <url><loc>https://check.peachmine.fun/scanner.html</loc><priority>0.8</priority></url>
+  <url><loc>https://check.peachmine.fun/detection.html</loc><priority>0.8</priority></url>
+  <url><loc>https://check.peachmine.fun/minecraft.html</loc><priority>0.8</priority></url>
+  <url><loc>https://check.peachmine.fun/windows.html</loc><priority>0.8</priority></url>
+  <url><loc>https://check.peachmine.fun/artifacts.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs.html</loc><priority>0.8</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-getting-started.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-quick-scan.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-full-scan.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-windows.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-minecraft.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-artifacts.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-detection.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-reports.html</loc><priority>0.6</priority></url>
+  <url><loc>https://check.peachmine.fun/docs-privacy.html</loc><priority>0.6</priority></url>
+  <url><loc>https://check.peachmine.fun/changelog.html</loc><priority>0.6</priority></url>
+  <url><loc>https://check.peachmine.fun/faq.html</loc><priority>0.7</priority></url>
+  <url><loc>https://check.peachmine.fun/privacy.html</loc><priority>0.6</priority></url>
+</urlset>

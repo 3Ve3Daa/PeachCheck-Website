@@ -1,0 +1,117 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FAQ — PeachCheck</title>
+  <meta name="description" content="Ответы на частые вопросы о PeachCheck: ложные срабатывания, Windows, Minecraft, приватность, поддержка.">
+  <meta property="og:title" content="FAQ — PeachCheck">
+  <meta property="og:description" content="Ответы на частые вопросы о PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/faq.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="FAQ — PeachCheck">
+  <meta name="twitter:description" content="Ответы на частые вопросы о PeachCheck.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/faq.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="help-circle"></i>FAQ</span>
+          <h1 class="page-title">Частые <span class="text-gradient">вопросы</span></h1>
+          <p class="page-subtitle">Ответы на популярные вопросы о PeachCheck.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container narrow">
+        <div class="faq-list reveal">
+          <div class="faq-item open">
+            <button class="faq-question">
+              <span>Чем PeachCheck отличается от других чекеров?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>PeachCheck не ограничивается файловой системой. Он собирает доказательства из десятков Windows-источников, Minecraft-установок, JAR-метаданных, логов и процессов, а затем коррелирует их. Это снижает вероятность пропустить переименованный или скрытый клиент.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Может ли PeachCheck ошибиться?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Любой автоматический инструмент может дать ложное срабатывание. Поэтому PeachCheck не выдаёт окончательных банов: он предоставляет evidence и confidence. Решение принимает человек.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Будет ли легитимный лаунчер помечен как чит?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Нет. Lunar, Badlion, Prism, Modrinth, CurseForge и другие известные лаунчеры находятся в белом списке и отображаются как INFO.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Нужен ли интернет?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Нет. Все сигнатуры встроены в EXE. Сканирование и формирование отчёта происходят офлайн.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Какие права нужны для запуска?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Quick Scan работает и без прав администратора. Для Full Scan и доступа к системным forensic-источникам рекомендуется запуск от имени Администратора.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Какие форматы отчётов поддерживаются?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>JSON для автоматической обработки, TXT для чтения и standalone HTML для просмотра в браузере.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              <span>Поддерживается ли Windows 7 или 32-bit?</span>
+              <i data-lucide="chevron-down" class="faq-icon"></i>
+            </button>
+            <div class="faq-answer">
+              <p>Нет. PeachCheck требует Windows 10/11 x64.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

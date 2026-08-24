@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Артефакты — PeachCheck Docs</title>
+  <meta name="description" content="Справочник по всем артефактам, которые анализирует PeachCheck.">
+  <meta property="og:title" content="Артефакты — PeachCheck Docs">
+  <meta property="og:description" content="Справочник по артефактам PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs.htmlartifacts/">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Артефакты — PeachCheck Docs">
+  <meta name="twitter:description" content="Справочник по артефактам PeachCheck.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs.htmlartifacts/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="database"></i>Docs</span>
+          <h1 class="page-title">Справочник <span class="text-gradient">артефактов</span></h1>
+          <p class="page-subtitle">Какой артефакт что показывает.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <div class="table-wrap">
+            <table class="docs-table">
+              <thead>
+                <tr><th>Артефакт</th><th>Группа</th><th>Описание</th></tr>
+              </thead>
+              <tbody>
+                <tr><td>Prefetch</td><td>Windows</td><td>Запуски программ, пути, счётчики, время</td></tr>
+                <tr><td>Amcache</td><td>Windows</td><td>Инвентаризация файлов, пути к удалённым программам</td></tr>
+                <tr><td>BAM / DAM</td><td>Windows</td><td>Последние запуски по пользователю</td></tr>
+                <tr><td>UserAssist</td><td>Windows</td><td>GUI-запуски с временем и счётчиком</td></tr>
+                <tr><td>ShimCache</td><td>Windows</td><td>Следы запуска, в том числе удалённых программ</td></tr>
+                <tr><td>SRUM</td><td>Windows</td><td>Сетевая активность приложений</td></tr>
+                <tr><td>Jump Lists</td><td>Windows</td><td>Недавние приложения и документы</td></tr>
+                <tr><td>LNK</td><td>Windows</td><td>Ярлыки с путями</td></tr>
+                <tr><td>Recycle Bin</td><td>Windows</td><td>Удалённые файлы</td></tr>
+                <tr><td>Event Logs</td><td>Windows</td><td>Системные события</td></tr>
+                <tr><td>Run / RunOnce</td><td>Registry</td><td>Автозагрузка</td></tr>
+                <tr><td>Winlogon</td><td>Registry</td><td>Shell, Userinit</td></tr>
+                <tr><td>Services</td><td>Registry</td><td>Системные службы</td></tr>
+                <tr><td>IFEO</td><td>Registry</td><td>Image File Execution Options</td></tr>
+                <tr><td>Active Setup</td><td>Registry</td><td>Точки закрепления</td></tr>
+                <tr><td>Task Scheduler</td><td>Persistence</td><td>Запланированные задачи</td></tr>
+                <tr><td>WMI Events</td><td>Persistence</td><td>Подписки WMI</td></tr>
+                <tr><td>BITS Jobs</td><td>Persistence</td><td>Фоновые задачи загрузки</td></tr>
+                <tr><td>Process list</td><td>Processes</td><td>Запущенные процессы</td></tr>
+                <tr><td>Authenticode</td><td>Processes</td><td>Цифровая подпись</td></tr>
+                <tr><td>SHA-256</td><td>Processes</td><td>Хеш процесса на диске</td></tr>
+                <tr><td>.minecraft</td><td>Minecraft</td><td>Папка клиента</td></tr>
+                <tr><td>fabric.mod.json</td><td>Minecraft</td><td>Метаданные Fabric-модов</td></tr>
+                <tr><td>mods.toml</td><td>Minecraft</td><td>Метаданные Forge/NeoForge</td></tr>
+                <tr><td>latest.log</td><td>Minecraft</td><td>Лог запуска</td></tr>
+                <tr><td>crash-reports</td><td>Minecraft</td><td>Файлы крашей</td></tr>
+                <tr><td>JVM args</td><td>Minecraft</td><td>Аргументы Java</td></tr>
+              </tbody>
+            </table>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

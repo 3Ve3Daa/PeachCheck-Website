@@ -1,0 +1,95 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quick Scan — PeachCheck Docs</title>
+  <meta name="description" content="Quick Scan PeachCheck: процессы, реестр, persistence, Minecraft. 10–30 секунд для быстрой оценки.">
+  <meta property="og:title" content="Quick Scan — PeachCheck Docs">
+  <meta property="og:description" content="Быстрая проверка ключевых источников за 10–30 секунд.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs-quick-scan.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Quick Scan — PeachCheck Docs">
+  <meta name="twitter:description" content="Быстрая проверка ключевых источников.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs-quick-scan.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="timer"></i>Docs</span>
+          <h1 class="page-title">Quick <span class="text-gradient">Scan</span></h1>
+          <p class="page-subtitle">Быстрая оценка ключевых источников.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <h2>Что проверяет Quick Scan?</h2>
+          <p>Quick Scan анализирует самые информативные источники за минимальное время. Рекомендуется для оперативных проверок.</p>
+
+          <h3>Модули</h3>
+          <ul>
+            <li><strong>Процессы:</strong> запущенные процессы, их родители, командные строки, подписи, SHA-256.</li>
+            <li><strong>Реестр:</strong> Run / RunOnce, Winlogon, Services, IFEO, Active Setup и другие точки persistence.</li>
+            <li><strong>Minecraft:</strong> поиск установок, JAR-анализ, логи, JVM-аргументы.</li>
+            <li><strong>Файлы:</strong> поиск по известным путям и подозрительным именам.</li>
+          </ul>
+
+          <h2>Время сканирования</h2>
+          <p>Обычно 10–30 секунд в зависимости от производительности системы и количества установок Minecraft.</p>
+
+          <h2>Права доступа</h2>
+          <p>Quick Scan может работать без прав администратора, но часть реестра и системных путей будет недоступна. Для лучших результатов запускайте от имени Администратора.</p>
+
+          <h2>Когда использовать?</h2>
+          <ul>
+            <li>Оперативная проверка подозрительного ПК.</li>
+            <li>Первичный скрининг игрока.</li>
+            <li>Быстрая оценка после инцидента.</li>
+          </ul>
+
+          <div class="docs-tip">
+            <strong>Совет:</strong> Если Quick Scan показал SUSPICIOUS или DETECTED с низкой confidence, запустите Full Scan для сбора дополнительных доказательств.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

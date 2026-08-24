@@ -1,0 +1,113 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Сканер PeachCheck — Quick Scan и Full Scan</title>
+  <meta name="description" content="PeachCheck предлагает Quick Scan для быстрой проверки и Full Scan для глубокого forensic-анализа Windows и Minecraft.">
+  <meta property="og:title" content="Сканер PeachCheck — Quick Scan и Full Scan">
+  <meta property="og:description" content="Quick Scan за 10–30 секунд. Full Scan для максимальной глубины Windows и Minecraft.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/scanner.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Сканер PeachCheck">
+  <meta name="twitter:description" content="Quick Scan за 10–30 секунд. Full Scan для максимальной глубины.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/scanner.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="scan-search"></i>Сканер</span>
+          <h1 class="page-title">Два режима для разных задач</h1>
+          <p class="page-subtitle">Quick Scan — быстрая оценка. Full Scan — полный forensic-обзор Windows и Minecraft.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container">
+        <div class="grid-2 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="timer"></i></div>
+            <h3 class="card-title">Quick Scan</h3>
+            <p class="card-desc">Процессы, реестр, persistence, сервисы, автозагрузка, Minecraft-установки и JAR-анализ. Идеально для оперативной проверки.</p>
+            <ul style="color:var(--text-2);padding-left:20px;">
+              <li>10–30 секунд</li>
+              <li>Запуск без прав администратора*</li>
+              <li>Ключевые источники доказательств</li>
+            </ul>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="scan"></i></div>
+            <h3 class="card-title">Full Scan</h3>
+            <p class="card-desc">Всё из Quick Scan плюс Prefetch, Amcache, BAM/DAM, UserAssist, ShimCache, SRUM, Jump Lists, LNK, Recycle Bin и Event Logs.</p>
+            <ul style="color:var(--text-2);padding-left:20px;">
+              <li>Глубокий анализ</li>
+              <li>Требуются права администратора</li>
+              <li>Исторические артефакты</li>
+            </ul>
+          </div>
+        </div>
+
+        <p class="text-center text-muted reveal" style="margin-top:20px;">* Часть реестра и системных артефактов доступна только с правами администратора.</p>
+
+        <div class="section-header reveal" style="margin-top:70px;">
+          <span class="section-label"><i data-lucide="layers"></i>Модули</span>
+          <h2>Что проверяет PeachCheck</h2>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="activity"></i></div>
+            <h3 class="card-title">Scanner.Processes</h3>
+            <p class="card-desc">Запущенные процессы, родительско-дочерние связи, командные строки, Authenticode-подписи, SHA-256.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="folder-tree"></i></div>
+            <h3 class="card-title">Scanner.Registry</h3>
+            <p class="card-desc">Autorun, Run keys, Winlogon, Services, Image File Execution Options и другие точки persistence.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="search"></i></div>
+            <h3 class="card-title">Scanner.Windows</h3>
+            <p class="card-desc">Prefetch, Amcache, BAM/DAM, UserAssist, ShimCache, SRUM, Jump Lists, LNK, Recycle Bin, Event Logs.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="gamepad-2"></i></div>
+            <h3 class="card-title">Scanner.Minecraft</h3>
+            <p class="card-desc">Поиск установок, JAR-анализ, логи, JVM-аргументы, Java-процессы, Fabric/Forge/NeoForge.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="file-search"></i></div>
+            <h3 class="card-title">Scanner.Files</h3>
+            <p class="card-desc">Поиск по файловой системе, известные пути читов, подозрительные имена и расширения.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="git-merge"></i></div>
+            <h3 class="card-title">Detection / Correlation</h3>
+            <p class="card-desc">Объединяет находки из разных модулей, вычисляет confidence и severity.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

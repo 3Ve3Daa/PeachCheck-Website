@@ -1,0 +1,493 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>PeachCheck — Windows & Minecraft Forensic Scanner</title>
+  <meta name="description" content="PeachCheck — единый forensic-сканер Windows и Minecraft. Один скан, полная картина, умная корреляция доказательств. Без баз данных, без облака, без телеметрии.">
+  <meta property="og:title" content="PeachCheck — Windows & Minecraft Forensic Scanner">
+  <meta property="og:description" content="Единый forensic-сканер Windows и Minecraft. Один скан, полная картина.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PeachCheck — Windows & Minecraft Forensic Scanner">
+  <meta name="twitter:description" content="Единый forensic-сканер Windows и Minecraft. Один скан, полная картина.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div class="bg-blob blob-3"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <div class="badge" style="margin-bottom:20px;">
+            <i data-lucide="shield-check"></i>
+            <span>Premium Windows & Minecraft Security</span>
+          </div>
+          <h1 class="hero-title">
+            <span class="text-gradient">PEACHCHECK</span><br>
+            Windows & Minecraft<br>
+            Forensic Scanner
+          </h1>
+          <p class="hero-subtitle">
+            Одно приложение. Один скан. Полная картина. Собирает, коррелирует и представляет доказательства из Windows, Minecraft и исторических артефактов — без облака, без баз данных, без телеметрии.
+          </p>
+          <div class="hero-actions">
+            <a href="/download.html" class="btn btn-primary btn-large">
+              <i data-lucide="download"></i>
+              Скачать PeachCheck
+            </a>
+            <a href="/scanner.html" class="btn btn-secondary btn-large">
+              <i data-lucide="scan-search"></i>
+              Изучить сканер
+            </a>
+          </div>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="glass hero-card">
+            <div class="scan-line"></div>
+            <div class="hero-card-header">
+              <span class="hero-card-title">PeachCheck</span>
+              <span class="hero-status"><span class="scan-dot"></span> сканирование</span>
+            </div>
+            <div class="hero-stat-grid">
+              <div class="hero-stat">
+                <div class="hero-stat-value text-gradient">2</div>
+                <div class="hero-stat-label">обнаружения</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value text-gradient">8</div>
+                <div class="hero-stat-label">артефактов</div>
+              </div>
+              <div class="hero-stat">
+                <div class="hero-stat-value text-gradient">143</div>
+                <div class="hero-stat-label">проверок</div>
+              </div>
+            </div>
+            <div class="hero-module-list">
+              <div class="hero-module done"><span><i data-lucide="check" class="hero-module-check"></i> Процессы</span></div>
+              <div class="hero-module done"><span><i data-lucide="check" class="hero-module-check"></i> Реестр</span></div>
+              <div class="hero-module running"><span><i data-lucide="loader-2" class="hero-module-spinner"></i> Prefetch</span></div>
+              <div class="hero-module"><span>Minecraft</span></div>
+              <div class="hero-module"><span>Корреляция</span></div>
+            </div>
+          </div>
+          <div class="glass hero-floating hero-floating-1">
+            <i data-lucide="file-check" style="color:var(--green);margin-right:6px;"></i>
+            SHA-256
+          </div>
+          <div class="glass hero-floating hero-floating-2">
+            <i data-lucide="shield" style="color:var(--peach-1);margin-right:6px;"></i>
+            Offline
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TRUST -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="layers"></i>Источники данных</span>
+          <h2>Один сканер. Множество источников доказательств.</h2>
+        </div>
+        <div class="trust-grid reveal">
+          <div class="glass-card trust-card">
+            <i data-lucide="monitor"></i>
+            <div class="trust-card-title">Windows</div>
+          </div>
+          <div class="glass-card trust-card">
+            <i data-lucide="gamepad-2"></i>
+            <div class="trust-card-title">Minecraft</div>
+          </div>
+          <div class="glass-card trust-card">
+            <i data-lucide="search"></i>
+            <div class="trust-card-title">Forensics</div>
+          </div>
+          <div class="glass-card trust-card">
+            <i data-lucide="cpu"></i>
+            <div class="trust-card-title">Процессы</div>
+          </div>
+          <div class="glass-card trust-card">
+            <i data-lucide="database"></i>
+            <div class="trust-card-title">Артефакты</div>
+          </div>
+          <div class="glass-card trust-card">
+            <i data-lucide="file-text"></i>
+            <div class="trust-card-title">Отчёты</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURES -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="zap"></i>Возможности</span>
+          <h2>Всё, что нужно команде верификации</h2>
+          <p>PeachCheck объединяет десятки отдельных проверок в одном portable EXE. Никаких PowerShell-скриптов, никаких сторонних утилит.</p>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="timer"></i></div>
+            <h3 class="card-title">Быстрый скан</h3>
+            <p class="card-desc">Quick Scan проходит за 10–30 секунд и покрывает ключевые источники: процессы, реестр, persistence и Minecraft.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="scan"></i></div>
+            <h3 class="card-title">Глубокий скан</h3>
+            <p class="card-desc">Full Scan добавляет Prefetch, Amcache, Jump Lists, LNK, Recycle Bin, Event Logs и исторические артефакты.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="search"></i></div>
+            <h3 class="card-title">Windows Forensics</h3>
+            <p class="card-desc">Prefetch, BAM/DAM, UserAssist, ShimCache, SRUM, Jump Lists, LNK, USBSTOR, ShellBags и другие источники.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="gamepad-2"></i></div>
+            <h3 class="card-title">Minecraft Detection</h3>
+            <p class="card-desc">Автообнаружение установок, анализ JAR, Fabric/Forge/NeoForge, логи, JVM-аргументы и Java-процессы.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="history"></i></div>
+            <h3 class="card-title">Исторические доказательства</h3>
+            <p class="card-desc">Находит следы даже удалённых файлов: Recycle Bin, Prefetch, Amcache, BAM, UserAssist, ShimCache.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="git-merge"></i></div>
+            <h3 class="card-title">Умная корреляция</h3>
+            <p class="card-desc">Не верит имени файла. Совмещает независимые источники и вычисляет confidence: LOW → MEDIUM → HIGH → VERY HIGH.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="package"></i></div>
+            <h3 class="card-title">JAR Analysis</h3>
+            <p class="card-desc">Анализирует JAR как ZIP: fabric.mod.json, mods.toml, пакеты, классы, миксины. Детектит переименованные файлы.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="activity"></i></div>
+            <h3 class="card-title">Анализ процессов</h3>
+            <p class="card-desc">PID/PPID, командная строка, пользователь, Authenticode-подпись, SHA-256, PE-метаданные.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="file-bar-chart"></i></div>
+            <h3 class="card-title">Детальные отчёты</h3>
+            <p class="card-desc">Экспорт в JSON, TXT и standalone HTML. Все данные остаются на ПК пользователя.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SHOWCASE -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="layout"></i>Интерфейс</span>
+          <h2>Интуитивный интерфейс для сложных проверок</h2>
+        </div>
+        <div class="glass showcase-frame reveal">
+          <div class="showcase-inner">
+            <div>
+              <h3 class="card-title">Всё под контролем</h3>
+              <p>Одно окно показывает прогресс по каждому модулю, статистику находок и готовые карточки evidence. Нажал кнопку — получил структурированный результат.</p>
+              <ul style="color:var(--text-2);padding-left:20px;margin-bottom:0;">
+                <li>Живая шкала прогресса по модулям</li>
+                <li>Сводка: DETECTED / SUSPICIOUS / ARTIFACT / INFO</li>
+                <li>Карточки находок с confidence и evidence</li>
+                <li>Экспорт в JSON / TXT / HTML</li>
+              </ul>
+            </div>
+            <div class="showcase-mockup">
+              <div class="mockup-header">
+                <span class="mockup-dot r"></span>
+                <span class="mockup-dot y"></span>
+                <span class="mockup-dot g"></span>
+                <span class="mockup-title">PeachCheck — Scan Complete</span>
+              </div>
+              <div class="mockup-row"><span>Windows Forensics</span><span class="mockup-row-check"><i data-lucide="check"></i></span></div>
+              <div class="mockup-row"><span>Minecraft Engine</span><span class="mockup-row-check"><i data-lucide="check"></i></span></div>
+              <div class="mockup-row"><span>Process Analysis</span><span class="mockup-row-check"><i data-lucide="check"></i></span></div>
+              <div class="mockup-row"><span>JAR Analysis</span><span class="mockup-row-check"><i data-lucide="check"></i></span></div>
+              <div style="margin-top:16px;padding:12px;border-radius:8px;background:rgba(255,184,107,0.08);border:1px solid rgba(255,184,107,0.15);font-size:0.85rem;">
+                <strong style="color:var(--peach-1);">2 DETECTED</strong> · 4 Suspicious · 8 Artifact · 132 Info
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- HOW IT WORKS -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="route"></i>Как это работает</span>
+          <h2>Три простых шага</h2>
+        </div>
+        <div class="timeline reveal">
+          <div class="timeline-item">
+            <div class="timeline-number">01</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Скачайте</h3>
+              <p>Скачайте один portable EXE с GitHub Release. Не требуется установка, .NET Runtime, Python или Java.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-number">02</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Запустите</h3>
+              <p>Нажмите Quick Scan для быстрой проверки или Full Scan для максимальной глубины. Для полного доступа к артефактам запускайте от имени Администратора.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-number">03</div>
+            <div class="timeline-content">
+              <h3 class="timeline-title">Проанализируйте</h3>
+              <p>Ознакомьтесь с карточками находок, confidence и evidence. Экспортируйте отчёт в JSON, TXT или HTML. Решение принимает человек.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETECTION -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="brain-circuit"></i>Корреляция</span>
+          <h2>Построено на доказательствах, а не предположениях</h2>
+          <p>PeachCheck никогда не объявляет клиент обнаруженным только по имени файла. Каждая находка — это результат совмещения независимых источников.</p>
+        </div>
+        <div class="schema reveal">
+          <div class="schema-row">
+            <span class="schema-chip"><i data-lucide="file"></i>Файл</span>
+            <span class="schema-chip"><i data-lucide="database"></i>Реестр</span>
+            <span class="schema-chip"><i data-lucide="search"></i>Prefetch</span>
+            <span class="schema-chip"><i data-lucide="clock"></i>BAM</span>
+          </div>
+          <div class="schema-row">
+            <span class="schema-chip"><i data-lucide="archive"></i>Amcache</span>
+            <span class="schema-chip"><i data-lucide="gamepad-2"></i>Minecraft</span>
+            <span class="schema-chip"><i data-lucide="cpu"></i>Процесс</span>
+          </div>
+          <div class="schema-arrow"><i data-lucide="arrow-down" style="width:28px;height:28px;"></i></div>
+          <div class="schema-result">Корреляция источников</div>
+          <div class="schema-arrow"><i data-lucide="arrow-down" style="width:28px;height:28px;"></i></div>
+          <div class="schema-result" style="background:linear-gradient(135deg, rgba(255,184,107,0.25), rgba(255,159,67,0.12));">Confidence & Severity</div>
+        </div>
+        <div class="grid-4 reveal" style="margin-top:50px;">
+          <div class="glass-card text-center">
+            <div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="shield-alert"></i></div>
+            <h3 class="card-title">DETECTED</h3>
+            <p class="card-desc">Высокая confidence, несколько независимых источников.</p>
+          </div>
+          <div class="glass-card text-center">
+            <div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="alert-triangle"></i></div>
+            <h3 class="card-title">SUSPICIOUS</h3>
+            <p class="card-desc">Есть совпадения, требуется ручной разбор.</p>
+          </div>
+          <div class="glass-card text-center">
+            <div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="history"></i></div>
+            <h3 class="card-title">ARTIFACT</h3>
+            <p class="card-desc">Исторический след, не доказательство само по себе.</p>
+          </div>
+          <div class="glass-card text-center">
+            <div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="info"></i></div>
+            <h3 class="card-title">INFO</h3>
+            <p class="card-desc">Справочная информация, легитимный софт.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MINECRAFT -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="gamepad-2"></i>Minecraft</span>
+          <h2>Построен для Minecraft</h2>
+          <p>Автоматическое обнаружение установок, анализ JAR-файлов, логов и Java-процессов. Не ограничивается папкой `.minecraft`.</p>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="map-pin"></i></div>
+            <h3 class="card-title">Discovery</h3>
+            <p class="card-desc">Находит .minecraft, Prism, MultiMC, ATLauncher, Modrinth, CurseForge, GDLauncher, Lunar, Badlion, Feather, LabyMod и другие.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="package"></i></div>
+            <h3 class="card-title">JAR Analysis</h3>
+            <p class="card-desc">Распаковывает JAR как ZIP, читает fabric.mod.json, mods.toml, neoforge.mods.toml, MANIFEST.MF, пакеты и классы.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="file-code"></i></div>
+            <h3 class="card-title">Логи & JVM</h3>
+            <p class="card-desc">Анализирует latest.log, debug.log, crash-репорты. Выявляет подозрительные JVM-аргументы: -javaagent, -agentlib, -agentpath.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="box"></i></div>
+            <h3 class="card-title">Fabric / Forge / NeoForge</h3>
+            <p class="card-desc">Поддержка современных загрузчиков и их метаданных. Различает легитимные моды и известные клиенты.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="user-check"></i></div>
+            <h3 class="card-title">Легитимные клиенты</h3>
+            <p class="card-desc">Lunar, Badlion, Prism, Modrinth, CurseForge и другие лаунчеры отмечаются как INFO, а не как читы.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="search-x"></i></div>
+            <h3 class="card-title">Переименованные JAR</h3>
+            <p class="card-desc">«banana.jar» с содержимым Meteor Client будет найден по метаданным внутри, а не по имени файла.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WINDOWS -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="monitor"></i>Windows</span>
+          <h2>Windows Forensics в одном EXE</h2>
+          <p>Prefetch, Amcache, BAM/DAM, UserAssist, ShimCache, Event Logs, Services, Tasks и десятки других источников — без сторонних утилит.</p>
+        </div>
+        <div class="grid-4 reveal">
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="search"></i></div><h3 class="card-title">Prefetch</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="archive"></i></div><h3 class="card-title">Amcache</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="clock"></i></div><h3 class="card-title">BAM / DAM</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="user"></i></div><h3 class="card-title">UserAssist</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="history"></i></div><h3 class="card-title">ShimCache</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="list"></i></div><h3 class="card-title">Jump Lists</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="file-symlink"></i></div><h3 class="card-title">LNK</h3></div>
+          <div class="glass-card text-center"><div class="card-icon" style="margin:0 auto 14px;"><i data-lucide="folder-tree"></i></div><h3 class="card-title">Registry</h3></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PERFORMANCE -->
+    <section class="section">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="gauge"></i>Производительность</span>
+          <h2>Быстрый там, где это важно</h2>
+        </div>
+        <div class="perf-grid reveal">
+          <div class="glass-card perf-card">
+            <div class="perf-value">10–30</div>
+            <div class="perf-label">секунд</div>
+            <div class="perf-note">Quick Scan на обычном ПК</div>
+          </div>
+          <div class="glass-card perf-card">
+            <div class="perf-value">Deep</div>
+            <div class="perf-label">анализ</div>
+            <div class="perf-note">Full Scan для максимальной глубины</div>
+          </div>
+          <div class="glass-card perf-card">
+            <div class="perf-value">Offline</div>
+            <div class="perf-label">без сервера</div>
+            <div class="perf-note">Никакого облака и баз данных</div>
+          </div>
+        </div>
+        <p class="text-center text-muted" style="margin-top:24px;font-size:0.85rem;">* Указаны ориентировочные значения. Реальная скорость зависит от системы и объёма данных.</p>
+      </div>
+    </section>
+
+    <!-- PRIVACY -->
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-label"><i data-lucide="lock"></i>Приватность</span>
+          <h2>Ваши данные остаются на вашем ПК</h2>
+        </div>
+        <div class="privacy-grid reveal">
+          <div class="glass-card privacy-card">
+            <i data-lucide="database"></i>
+            <div>
+              <div class="privacy-card-title">Нет базы данных</div>
+              <p class="privacy-card-desc">Все сигнатуры встроены в EXE.</p>
+            </div>
+          </div>
+          <div class="glass-card privacy-card">
+            <i data-lucide="cloud-off"></i>
+            <div>
+              <div class="privacy-card-title">Нет облачного скана</div>
+              <p class="privacy-card-desc">Сканирование полностью офлайн.</p>
+            </div>
+          </div>
+          <div class="glass-card privacy-card">
+            <i data-lucide="radio"></i>
+            <div>
+              <div class="privacy-card-title">Нет телеметрии</div>
+              <p class="privacy-card-desc">Никакой аналитики и логирования.</p>
+            </div>
+          </div>
+          <div class="glass-card privacy-card">
+            <i data-lucide="user-x"></i>
+            <div>
+              <div class="privacy-card-title">Нет аккаунта</div>
+              <p class="privacy-card-desc">Не требуется регистрация.</p>
+            </div>
+          </div>
+          <div class="glass-card privacy-card">
+            <i data-lucide="wifi-off"></i>
+            <div>
+              <div class="privacy-card-title">Офлайн-сканирование</div>
+              <p class="privacy-card-desc">Интернет не нужен для работы.</p>
+            </div>
+          </div>
+          <div class="glass-card privacy-card">
+            <i data-lucide="upload-cloud"></i>
+            <div>
+              <div class="privacy-card-title">Нет загрузки результатов</div>
+              <p class="privacy-card-desc">Отчёты записываются только локально.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DOWNLOAD CTA -->
+    <section class="section">
+      <div class="container">
+        <div class="glass download-card reveal">
+          <span class="section-label"><i data-lucide="download"></i>Готовы начать?</span>
+          <h2 style="margin-top:12px;">Готовы запустить PeachCheck?</h2>
+          <p style="max-width:520px;margin:0 auto 24px;">Скачайте portable EXE, проверьте SHA-256 и запустите сканирование. Windows 10/11 x64.</p>
+          <div class="download-meta">
+            <span class="download-meta-item"><i data-lucide="monitor"></i>Windows 10 / 11</span>
+            <span class="download-meta-item"><i data-lucide="cpu"></i>x64</span>
+            <span class="download-meta-item"><i data-lucide="usb"></i>Portable</span>
+          </div>
+          <a href="/download.html" class="btn btn-primary btn-large" style="margin-right:12px;">
+            <i data-lucide="download"></i>
+            Скачать PeachCheck
+          </a>
+          <a href="https://github.com/PeachMine/PeachCheck/releases" target="_blank" rel="noopener" class="btn btn-secondary btn-large">
+            <i data-lucide="external-link"></i>
+            GitHub Releases
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

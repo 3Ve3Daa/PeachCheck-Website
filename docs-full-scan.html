@@ -1,0 +1,97 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Full Scan — PeachCheck Docs</title>
+  <meta name="description" content="Full Scan PeachCheck: Prefetch, Amcache, BAM, UserAssist, ShimCache, SRUM, Jump Lists, LNK, Recycle Bin и Event Logs.">
+  <meta property="og:title" content="Full Scan — PeachCheck Docs">
+  <meta property="og:description" content="Глубокий forensic-анализ всех поддерживаемых источников.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs.htmlfull-scan/">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Full Scan — PeachCheck Docs">
+  <meta name="twitter:description" content="Глубокий forensic-анализ всех источников.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs.htmlfull-scan/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="scan"></i>Docs</span>
+          <h1 class="page-title">Full <span class="text-gradient">Scan</span></h1>
+          <p class="page-subtitle">Глубокий forensic-анализ всех источников.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <h2>Что включает Full Scan?</h2>
+          <p>Full Scan выполняет всё, что делает Quick Scan, плюс анализ исторических и системных forensic-источников Windows.</p>
+
+          <h3>Дополнительные источники</h3>
+          <ul>
+            <li><strong>Prefetch:</strong> следы запусков программ.</li>
+            <li><strong>Amcache:</strong> инвентаризация исполняемых файлов.</li>
+            <li><strong>BAM / DAM:</strong> последние запуски по пользователю.</li>
+            <li><strong>UserAssist:</strong> GUI-запуски с временем.</li>
+            <li><strong>ShimCache:</strong> кэш совместимости приложений.</li>
+            <li><strong>SRUM:</strong> сетевая и ресурсная активность.</li>
+            <li><strong>Jump Lists:</strong> недавние документы и приложения.</li>
+            <li><strong>LNK:</strong> ярлыки с путями.</li>
+            <li><strong>Recycle Bin:</strong> удалённые файлы.</li>
+            <li><strong>Event Logs:</strong> системные события.</li>
+          </ul>
+
+          <h2>Права доступа</h2>
+          <p>Для доступа к большинству системных источников необходимы права Администратора. Без них модуль вернёт статус AccessLimited.</p>
+
+          <h2>Время сканирования</h2>
+          <p>Зависит от объёма данных: обычно от 30 секунд до нескольких минут.</p>
+
+          <h2>Когда использовать?</h2>
+          <ul>
+            <li>Подозрительный Quick Scan требует подтверждения.</li>
+            <li>Нужно найти следы удалённых программ.</li>
+            <li>Полная экспертиза инцидента.</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Детект — PeachCheck Docs</title>
+  <meta name="description" content="Как PeachCheck принимает решения: correlation engine, confidence, severity, категории находок.">
+  <meta property="og:title" content="Детект — PeachCheck Docs">
+  <meta property="og:description" content="Correlation engine, confidence и severity в PeachCheck.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/docs.htmldetection/">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Детект — PeachCheck Docs">
+  <meta name="twitter:description" content="Correlation engine, confidence и severity.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/docs.htmldetection/">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="brain-circuit"></i>Docs</span>
+          <h1 class="page-title">Корреляция & <span class="text-gradient">Детект</span></h1>
+          <p class="page-subtitle">Как PeachCheck принимает решения на основе источников.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container docs-layout">
+        <aside class="docs-sidebar reveal">
+          <nav class="docs-nav">
+            <a href="/docs.html">Введение</a>
+            <a href="/docs-getting-started.html">Начало работы</a>
+            <a href="/docs-quick-scan.html">Quick Scan</a>
+            <a href="/docs.htmlfull-scan/">Full Scan</a>
+            <a href="/docs.htmlwindows/">Windows Forensics</a>
+            <a href="/docs.htmlminecraft/">Minecraft</a>
+            <a href="/docs.htmlartifacts/">Артефакты</a>
+            <a href="/docs.htmldetection/">Детект</a>
+            <a href="/docs-reports.html">Отчёты</a>
+            <a href="/docs.htmlprivacy/">Приватность</a>
+          </nav>
+        </aside>
+        <article class="docs-article reveal">
+          <h2>Correlation Engine</h2>
+          <p>Каждый модуль создаёт <strong>DetectionCandidate</strong> — кандидат на находку с указанием источника, confidence и дополнительных evidence. Correlation Engine объединяет кандидаты с одинаковым объектом из разных источников.</p>
+
+          <h2>Confidence</h2>
+          <p>Confidence показывает, насколько надёжно источники подтверждают находку:</p>
+          <ul>
+            <li><strong>LOW</strong> — один косвенный источник.</li>
+            <li><strong>MEDIUM</strong> — два независимых источника.</li>
+            <li><strong>HIGH</strong> — три источника.</li>
+            <li><strong>VERY HIGH</strong> — множество источников и прямое совпадение.</li>
+          </ul>
+
+          <h2>Severity</h2>
+          <p>Severity определяет важность находки:</p>
+          <ul>
+            <li><strong>Info</strong> — справочная информация, легитимный софт.</li>
+            <li><strong>Low</strong> — артефакт или низкорисковый признак.</li>
+            <li><strong>Medium</strong> — подозрительная находка.</li>
+            <li><strong>High</strong> — высокая вероятность клиента/угрозы.</li>
+            <li><strong>Critical</strong> — активный процесс или ярко выраженная угроза.</li>
+          </ul>
+
+          <h2>Категории находок</h2>
+          <ul>
+            <li><strong>DETECTED</strong> — высокая confidence, несколько источников.</li>
+            <li><strong>SUSPICIOUS</strong> — есть признаки, требуется разбор.</li>
+            <li><strong>ARTIFACT</strong> — исторический след.</li>
+            <li><strong>INFO</strong> — справочная информация.</li>
+          </ul>
+
+          <div class="docs-tip">
+            <strong>Важно:</strong> PeachCheck не выносит окончательный вердикт. Любой детект — это evidence для дальнейшего анализа человеком.
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>

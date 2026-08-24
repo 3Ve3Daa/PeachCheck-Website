@@ -1,0 +1,132 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minecraft — PeachCheck Detection</title>
+  <meta name="description" content="PeachCheck обнаруживает Minecraft-читы по метаданным JAR, логам и JVM-аргументам. Поддерживает Fabric, Forge, NeoForge и десятки лаунчеров.">
+  <meta property="og:title" content="Minecraft — PeachCheck Detection">
+  <meta property="og:description" content="Обнаружение Minecraft-читов по JAR, логам и JVM-аргументам.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://check.peachmine.fun/minecraft.html">
+  <meta property="og:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Minecraft — PeachCheck">
+  <meta name="twitter:description" content="Обнаружение Minecraft-читов по JAR, логам и JVM-аргументам.">
+  <meta name="twitter:image" content="https://check.peachmine.fun/assets/images/og.svg">
+  <link rel="canonical" href="https://check.peachmine.fun/minecraft.html">
+  <link rel="icon" type="image/svg+xml" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+  <div id="header-include"></div>
+
+  <main>
+    <section class="page-hero">
+      <div class="container narrow">
+        <div class="reveal">
+          <span class="section-label"><i data-lucide="gamepad-2"></i>Minecraft</span>
+          <h1 class="page-title">Построен для <span class="text-gradient">Minecraft</span></h1>
+          <p class="page-subtitle">Автообнаружение установок, анализ JAR, логов и Java-процессов. Не по имени файла — по метаданным и поведению.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-sm">
+      <div class="container">
+        <div class="section-header reveal">
+          <h2>Что анализируется</h2>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="map-pin"></i></div>
+            <h3 class="card-title">Discovery</h3>
+            <p class="card-desc">Находит .minecraft, Prism, MultiMC, ATLauncher, Modrinth, CurseForge, GDLauncher, Lunar, Badlion, Feather, LabyMod и другие.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="package"></i></div>
+            <h3 class="card-title">JAR Analysis</h3>
+            <p class="card-desc">Распаковывает JAR как ZIP и читает fabric.mod.json, mods.toml, neoforge.mods.toml, MANIFEST.MF, пакеты и классы.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="file-code"></i></div>
+            <h3 class="card-title">Логи & JVM</h3>
+            <p class="card-desc">Анализирует latest.log, debug.log, crash-репорты, JVM-аргументы: -javaagent, -agentlib, -agentpath.</p>
+          </div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top:70px;">
+          <h2>Поддерживаемые лаунчеры</h2>
+          <p>Легитимные клиенты и лаунчеры не помечаются как читы. Они выводятся в категории INFO.</p>
+        </div>
+        <div class="grid-4 reveal">
+          <div class="glass-card text-center"><h3 class="card-title">Vanilla</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Prism Launcher</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">MultiMC</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Modrinth</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">CurseForge</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Lunar Client</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Badlion Client</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">Feather Client</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">LabyMod</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">ATLauncher</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">GDLauncher</h3></div>
+          <div class="glass-card text-center"><h3 class="card-title">И другие</h3></div>
+        </div>
+
+        <div class="section-header reveal" style="margin-top:70px;">
+          <h2>Категории читов</h2>
+        </div>
+        <div class="grid-3 reveal">
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="crosshair"></i></div>
+            <h3 class="card-title">Combat</h3>
+            <p class="card-desc">KillAura, AutoClicker, AimBot, Reach, Velocity, Criticals и другие PvP-преимущества.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="move"></i></div>
+            <h3 class="card-title">Movement</h3>
+            <p class="card-desc">Speed, Fly, Jesus, Step, Sprint, NoSlow, ElytraFly и подобные модификации передвижения.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="eye"></i></div>
+            <h3 class="card-title">Render / ESP</h3>
+            <p class="card-desc">WallHack, ESP, X-Ray, Freecam, Tracers, Nametags и визуальные преимущества.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="hammer"></i></div>
+            <h3 class="card-title">World / Grief</h3>
+            <p class="card-desc">Nuker, Scaffold, FastPlace, AutoTool, AutoArmor, ChestStealer и автоматизация.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="cpu"></i></div>
+            <h3 class="card-title">Ghost Clients</h3>
+            <p class="card-desc">Минимизированные клиенты, которые сложно обнаружить визуально, но оставляют следы в JAR и логах.</p>
+          </div>
+          <div class="glass-card">
+            <div class="card-icon"><i data-lucide="file-search"></i></div>
+            <h3 class="card-title">Injectors</h3>
+            <p class="card-desc">Java-агенты, DLL-инжекторы, -javaagent и другие способы внедрения в процесс Minecraft.</p>
+          </div>
+        </div>
+
+        <div class="glass reveal" style="margin-top:60px;">
+          <h3 style="margin-bottom:12px;">Почему не по имени файла?</h3>
+          <p>Пользователь может переименовать чит-клиент в <code>banana.jar</code> или <code>minecraft.jar</code>. PeachCheck смотрит внутрь: на <code>fabric.mod.json</code>, <code>mods.toml</code>, пакеты классов, миксины. Если содержимое совпадает с известной сигнатурой — клиент будет обнаружен вне зависимости от имени.</p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div id="footer-include"></div>
+  <script src="/assets/js/lucide.min.js"></script>
+  <script src="/assets/js/main.js"></script>
+</body>
+</html>
