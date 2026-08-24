@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="630" viewBox="0 0 1200 630">
+  <rect width="1200" height="630" fill="#0B0B0D"/>
+  <circle cx="950" cy="180" r="300" fill="#FF9F43" opacity="0.10" filter="blur(90px)"/>
+  <circle cx="250" cy="520" r="260" fill="#FFB86B" opacity="0.08" filter="blur(90px)"/>
+  <circle cx="180" cy="180" r="60" fill="url(#ogGrad)"/>
+  <path d="M180 135 Q205 110 230 135 T180 150" fill="#6FDC8C"/>
+  <defs>
+    <linearGradient id="ogGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFB86B"/>
+      <stop offset="100%" stop-color="#FF9F43"/>
+    </linearGradient>
+  </defs>
+  <text x="260" y="270" font-family="Inter, Segoe UI, sans-serif" font-size="92" font-weight="800" fill="#FFFFFF">PEACHCHECK</text>
+  <text x="260" y="350" font-family="Inter, Segoe UI, sans-serif" font-size="44" font-weight="500" fill="rgba(255,255,255,0.75)">Windows &amp; Minecraft Forensic Scanner</text>
+  <text x="260" y="440" font-family="Inter, Segoe UI, sans-serif" font-size="28" font-weight="400" fill="rgba(255,255,255,0.5)">One application. One scan. Complete evidence.</text>
+</svg>
