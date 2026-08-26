@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-Content-Type-Options" content="nosniff">
+  <meta http-equiv="X-Frame-Options" content="DENY">
+  <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+  <meta http-equiv="Permissions-Policy" content="camera=(), microphone=(), geolocation=(), payment=()">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data: https:; script-src 'self' 'unsafe-inline'; connect-src 'none'; frame-src 'none'; object-src 'none'; base-uri 'self'; form-action 'self';">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>404 — Страница не найдена | PeachCheck</title>
+  <meta name="robots" content="noindex, nofollow">
+  <link rel="icon" type="image/png" href="/assets/images/Logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  <style>
+    .notfound-wrap {
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      padding: 2rem;
+      gap: 1.5rem;
+    }
+    .notfound-code {
+      font-size: clamp(5rem, 18vw, 10rem);
+      font-weight: 800;
+      line-height: 1;
+      background: linear-gradient(135deg, var(--accent, #f97316), #facc15);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .notfound-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: var(--text-1, #f1f1f1);
+    }
+    .notfound-sub {
+      color: var(--text-3, #888);
+      max-width: 400px;
+      line-height: 1.6;
+    }
+    .notfound-links {
+      display: flex;
+      gap: 1rem;
+      flex-wrap: wrap;
+      justify-content: center;
+      margin-top: 0.5rem;
+    }
+    .notfound-links a {
+      padding: 0.6rem 1.4rem;
+      border-radius: 8px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      text-decoration: none;
+      transition: opacity 0.15s;
+    }
+    .notfound-links a:hover { opacity: 0.8; }
+    .btn-primary { background: var(--accent, #f97316); color: #000; }
+    .btn-ghost { border: 1px solid rgba(255,255,255,0.15); color: var(--text-2, #ccc); }
+  </style>
+</head>
+<body>
+  <div class="bg-ambiance"></div>
+  <div class="bg-grid"></div>
+  <div class="bg-blob blob-1"></div>
+  <div class="bg-blob blob-2"></div>
+
+  <div class="notfound-wrap">
+    <div class="notfound-code">404</div>
+    <div class="notfound-title">Страница не найдена</div>
+    <p class="notfound-sub">Запрошенная страница не существует или была перемещена. Проверь адрес или вернись на главную.</p>
+    <div class="notfound-links">
+      <a href="/" class="btn-primary">На главную</a>
+      <a href="/docs.html" class="btn-ghost">Документация</a>
+      <a href="/download.html" class="btn-ghost">Скачать</a>
+    </div>
+  </div>
+</body>
+</html>
